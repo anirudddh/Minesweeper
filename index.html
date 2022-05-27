@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162324325-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162324325-2');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Minesweeper made by Rahul">
+    <meta property="og:image" content="https://geekvert.github.io/Minesweeper/images/icon.png">
+    <title>Minesweeper by Aniruddh</title>
+    <link rel="shortcut icon" type="image/png" href="./images/minesweeper_icon.png"/>
+    <link rel="stylesheet" href="./static/main.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <!-- Particles live background -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body id="particles-js">
+    <div class="textBox"></div>
+
+    <div class="rightern">
+        <div class="txt">
+            Timer
+        </div>
+        <div class="timer">
+            0<span style="font-size: 60%;"> seconds</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="gameOver">
+            <div class="go">
+                GAME OVER
+            </div>
+            <br>
+            <button class="restart" onclick=restart()>
+                Restart
+            </button>
+        </div>
+    </div>
+
+    <button class="rest" onclick=restart()>
+        Restart
+    </button>
+
+    <audio class="gOver" src="./audio/gameOver.mp3"></audio>
+    <audio class="open" src="./audio/open.mp3"></audio>
+    <audio class="flagAudio" src="./audio/flag.mp3"></audio>
+
+    <div class="footer">
+        Copyright &copy; 2022 All Rights Reserved | Game Made with  <img class="heart" src="./images/heart.jpeg" alt="love"> by  <a href="https://linktr.ee/Anirudddh" > Aniruddha Rajendra Shinde</a>
+    </div>
+    
+    <script src="./static/test.min.js"></script>
+    <script src="./static/particle.js"></script>
+</body>
+</html>
